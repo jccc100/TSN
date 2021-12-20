@@ -1,0 +1,1852 @@
+[INFO: train.py:  124]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=10, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:10
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  124]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=10, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:10
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  124]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=10, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:10
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [0.20342954], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [0.49901763], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [1.0776829], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [0.118225], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [0.33461097], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [0.69892806], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [0.08354772], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [0.39061612], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [0.865973], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [0.2562005], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [0.6860452], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [0.20456198], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [0.70297974], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [0.5349344], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [0.4478653], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [0.72719544], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [0.85288143], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [0.5061036], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [0.27068794], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [0.36148995], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [0.4224109], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [0.29574275], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [0.20508435], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [0.16544016], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [0.20871453], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [0.08630832], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [0.4436288], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [0.46620578], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [0.39557186], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [0.22599229], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [0.3339885], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [0.35626075], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [0.29434603], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [0.13541141], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [0.15096585], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [0.68725055], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [0.22484235], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [0.15524289], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [0.59722376], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [0.23025763], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [0.14528008], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [0.20870295], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [0.39381164], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [0.12594317], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [0.17480102], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [0.23091786], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [0.7707643], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [0.5242161], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [0.7100954], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [0.91653764], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [0.10475507], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [0.27264315], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [0.42532578], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 6 step 5: [1.0961145], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 6 step 6: [0.587932], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 6 step 7: [0.14335138], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 0: [0.13126191], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 1: [0.3182606], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 2: [0.0909351], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 3: [0.06951733], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 4: [0.22820285], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 7 step 5: [0.20562632], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 7 step 6: [0.23721354], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 7 step 7: [0.23097038], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 8 step 0: [0.36817464], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 1: [0.6906975], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 8 step 2: [0.9720627], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 8 step 3: [0.14057046], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 8 step 4: [0.2154264], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 8 step 5: [0.5389059], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 6: [0.84331816], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 7: [1.4933164], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 9 step 0: [1.5239923], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 9 step 1: [0.12777281], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 9 step 2: [0.1969621], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 9 step 3: [0.36945164], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 9 step 4: [0.34715164], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 9 step 5: [0.839595], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 9 step 6: [0.9112506], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 9 step 7: [0.38894346], acc: [0.8]
+[INFO: train.py:  117]: Final loss: [0.38894346]
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=10, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:10
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [0.25961345], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [0.6876171], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [0.5883217], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [0.06090393], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [0.62668306], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [0.42998204], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [1.3733562], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [0.41481647], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [0.23790136], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [0.34577417], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [0.16506569], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [0.20101869], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [0.29542607], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [0.27366647], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [0.54017925], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [0.16896017], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [0.4592372], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [0.77319974], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [1.3287894], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [0.11036801], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [0.4688416], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [0.11676891], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [0.52052385], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [0.48017636], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [1.881498], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [0.10211396], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [2.2313073], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [0.17825587], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [0.45805293], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [0.6074053], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [0.33717757], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [0.828828], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [0.4221345], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [0.5891009], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [0.08535354], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [0.6161458], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [0.59055954], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [0.73561203], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [0.11056769], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [0.86279285], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [0.45821017], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [0.07512006], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [0.48794335], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [0.549429], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [0.5409773], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [0.7182564], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [0.2844298], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [0.92704964], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [0.50689787], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [0.3243431], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [0.2821504], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [0.2253567], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [0.72571737], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 6 step 5: [0.8625784], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 6 step 6: [0.18797852], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 6 step 7: [0.16932806], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 0: [0.12612589], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 1: [0.28210765], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 7 step 2: [0.43092546], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 7 step 3: [0.16932197], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 7 step 4: [0.3014785], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 7 step 5: [0.30142862], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 7 step 6: [0.26493403], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 7 step 7: [0.15875857], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 8 step 0: [0.72084004], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 1: [0.10471292], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 8 step 2: [0.5164541], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 3: [0.43945366], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 8 step 4: [0.20264669], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 8 step 5: [0.29090804], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 6: [0.17936605], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 8 step 7: [1.0430254], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 9 step 0: [0.29144412], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 9 step 1: [0.24585004], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 9 step 2: [0.2579596], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 9 step 3: [0.35677215], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 9 step 4: [0.1342309], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 9 step 5: [0.12116897], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 9 step 6: [0.75416774], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 9 step 7: [0.32335493], acc: [0.9]
+[INFO: train.py:  118]: Final loss: [0.32335493]
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=10, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:10
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=10, learning_rate=None, model_name='tsn', pretrain=None, save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:10
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [2.5014129], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [2.4141817], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [2.2846522], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [2.328378], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [2.584861], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [2.2529569], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [2.5558467], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [3.0360987], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [2.5545473], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [2.8648376], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [2.9029462], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [2.2774742], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [2.7220497], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [3.0455945], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [2.4441838], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [2.4721987], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [1.9479516], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [2.7806234], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [2.546101], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [2.086298], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [2.900736], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [2.557222], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [3.0209646], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [2.1956067], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [2.262565], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [2.3328795], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [2.3001094], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [2.582084], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [2.4286814], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [3.0877488], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [2.1988633], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [2.6091604], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [2.2337224], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [2.1775987], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [2.6790197], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [2.784922], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [2.581225], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [2.567501], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [2.5524738], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [2.3842437], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [2.9780488], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [2.7266097], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [2.402714], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [2.5671825], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [2.3571362], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [3.1592069], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [3.1005998], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [2.504218], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [2.2034192], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [2.6331954], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [2.322667], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [2.6101487], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [2.505902], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 5: [2.5787141], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 6: [2.4347777], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 7: [2.4529126], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 0: [2.2219336], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 1: [2.2546089], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 2: [2.6635063], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 3: [2.2884765], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 4: [2.250807], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 5: [2.2055204], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 7 step 6: [2.3119774], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 7 step 7: [2.882906], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 0: [2.5131154], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 8 step 1: [2.245659], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 8 step 2: [2.0828705], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 8 step 3: [2.6012955], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 8 step 4: [2.6529298], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 8 step 5: [2.115717], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 6: [2.636895], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 8 step 7: [2.3231168], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 9 step 0: [2.0542674], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 9 step 1: [2.098663], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 9 step 2: [1.9911134], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 9 step 3: [2.5588396], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 9 step 4: [2.9057436], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 9 step 5: [2.2047918], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 9 step 6: [2.302848], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 9 step 7: [2.3946414], acc: [0.]
+[INFO: train.py:  118]: Final loss: [2.3946414]
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=10, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:10
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [2.008332], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [1.9339012], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [2.2150235], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [2.3529608], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [2.479912], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [3.0196693], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [2.1512053], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [2.277986], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [2.3092482], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [1.9719462], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [2.3134701], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [2.1230397], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [2.6932902], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [2.4049163], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [2.4384358], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [2.6550376], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [2.154729], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [1.84589], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [2.2209985], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [2.0918288], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [2.2228966], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [2.5463672], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [2.767135], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [2.453744], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [2.121334], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [2.1317685], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [1.9341899], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [2.1781409], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [2.4298105], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [2.0418272], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [2.3310022], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [1.891224], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [2.2630386], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [2.4905927], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [1.9661051], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [2.2741907], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [2.0188138], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [1.7245059], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [2.2290053], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [2.0455673], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [2.0734088], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [1.6991614], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [1.6535753], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [2.5122788], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [2.6917877], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [1.9303883], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [2.6938639], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [1.9221038], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [2.2207105], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [1.9273014], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [2.1801198], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [2.3622417], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [2.0341425], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 5: [1.9324955], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 6: [2.270708], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 7: [2.0204911], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 0: [1.978811], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 7 step 1: [2.2562556], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 2: [1.7512535], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 7 step 3: [2.4223297], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 7 step 4: [2.1889274], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 7 step 5: [2.369844], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 6: [2.5476491], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 7: [2.1584067], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 8 step 0: [1.925529], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 8 step 1: [2.03728], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 2: [1.8099093], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 3: [2.2547638], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 4: [2.6636913], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 8 step 5: [2.5424666], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 8 step 6: [1.8271155], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 8 step 7: [1.5880123], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 9 step 0: [2.4416838], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 9 step 1: [1.630322], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 9 step 2: [1.5584131], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 9 step 3: [2.1923678], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 9 step 4: [2.4035366], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 9 step 5: [2.7421916], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 9 step 6: [2.3478851], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 9 step 7: [1.793342], acc: [0.5]
+[INFO: train.py:  118]: Final loss: [1.793342]
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=50, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:50
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [1.7032404], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [2.1810899], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [1.9893169], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [2.0263972], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [1.8144717], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [1.9792459], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [2.6136775], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [2.0852017], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [2.2554934], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [1.913878], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [2.5120184], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [2.2901757], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [1.3934067], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [2.0543756], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [2.428708], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [2.375247], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [2.137444], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [2.1493473], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [1.6848372], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [1.7558703], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [1.9722856], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [2.66324], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [2.0185966], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [2.5677798], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [1.5707054], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [2.047031], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [2.2236962], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [1.856954], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [1.6055453], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [2.8264365], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [1.6371272], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [2.3253174], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [1.4490874], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [1.9190884], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [2.3719325], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [2.184447], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [2.2965238], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [2.7303925], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [1.5497833], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [2.3869245], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [1.3703272], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [1.8607712], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [2.1283796], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [1.8758748], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [1.7941139], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [2.1645498], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [1.9294646], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [3.0456674], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [1.7354907], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [2.4002419], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [2.1410613], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [2.2165792], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [1.6318885], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 5: [1.9586579], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 6 step 6: [1.8246629], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 7: [1.4452052], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 7 step 0: [1.5357703], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 7 step 1: [1.4788702], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 7 step 2: [1.5030012], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 7 step 3: [1.5832528], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 7 step 4: [2.7833383], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 7 step 5: [1.5733398], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 7 step 6: [1.138521], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 7 step 7: [2.1162696], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 8 step 0: [1.8663073], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 1: [1.4324946], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 8 step 2: [1.5340388], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 8 step 3: [1.8783276], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 8 step 4: [1.6290463], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 5: [1.970558], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 8 step 6: [2.9504054], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 8 step 7: [1.7317762], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 9 step 0: [1.5976946], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 9 step 1: [1.67045], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 9 step 2: [1.5693555], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 9 step 3: [2.7177916], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 9 step 4: [1.5397118], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 9 step 5: [1.6314384], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 9 step 6: [2.1932387], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 9 step 7: [1.6174906], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 10 step 0: [1.6705415], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 10 step 1: [1.7370784], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 10 step 2: [1.2111393], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 10 step 3: [2.3768306], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 10 step 4: [1.8172067], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 10 step 5: [1.8311138], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 10 step 6: [2.0390506], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 10 step 7: [1.2824323], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 11 step 0: [1.6786442], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 11 step 1: [1.3306336], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 11 step 2: [1.8263336], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 11 step 3: [1.5031071], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 11 step 4: [1.9390795], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 11 step 5: [1.6505115], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 11 step 6: [2.0190191], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 11 step 7: [2.125534], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 12 step 0: [2.0607765], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 12 step 1: [1.4297659], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 12 step 2: [1.8123997], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 12 step 3: [1.6772087], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 12 step 4: [1.0078384], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 12 step 5: [1.4254613], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 12 step 6: [1.4378057], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 12 step 7: [1.8322749], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 13 step 0: [0.909357], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 13 step 1: [2.186166], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 13 step 2: [2.14094], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 13 step 3: [1.5359476], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 13 step 4: [1.335699], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 13 step 5: [2.217825], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 13 step 6: [2.28058], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 13 step 7: [1.5958238], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 14 step 0: [1.4637147], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 14 step 1: [1.7804642], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 14 step 2: [1.720681], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 14 step 3: [1.3244566], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 14 step 4: [1.7632282], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 14 step 5: [2.136673], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 14 step 6: [1.3582376], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 14 step 7: [1.7184225], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 15 step 0: [1.6050209], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 15 step 1: [2.3297513], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 15 step 2: [1.9387007], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 15 step 3: [2.6956394], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 15 step 4: [2.0653386], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 15 step 5: [1.5969934], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 15 step 6: [1.4895654], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 15 step 7: [1.658913], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 16 step 0: [1.0219153], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 16 step 1: [1.6994324], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 16 step 2: [1.6390526], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 16 step 3: [1.9029429], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 16 step 4: [0.9144583], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 16 step 5: [2.1281111], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 16 step 6: [1.4073772], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 16 step 7: [1.6094267], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 17 step 0: [1.4952394], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 17 step 1: [1.1081622], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 17 step 2: [0.88414764], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 17 step 3: [1.1472073], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 17 step 4: [1.4129796], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 17 step 5: [1.6358486], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 17 step 6: [2.1207373], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 17 step 7: [1.5919604], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 18 step 0: [1.288485], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 18 step 1: [1.468748], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 18 step 2: [1.3366413], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 18 step 3: [1.3088698], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 18 step 4: [1.2726754], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 18 step 5: [1.4585233], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 18 step 6: [1.6963195], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 18 step 7: [1.4743898], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 19 step 0: [1.6862468], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 19 step 1: [1.5073657], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 19 step 2: [1.8454273], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 19 step 3: [1.5784116], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 19 step 4: [1.81272], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 19 step 5: [1.0300758], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 19 step 6: [1.0419905], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 19 step 7: [1.1372038], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 20 step 0: [1.3141612], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 20 step 1: [1.3364323], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 20 step 2: [1.2041564], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 20 step 3: [1.5549326], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 20 step 4: [1.9913838], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 20 step 5: [1.178166], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 20 step 6: [1.704916], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 20 step 7: [1.3456861], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 21 step 0: [1.174403], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 21 step 1: [1.1111693], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 21 step 2: [1.4740837], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 21 step 3: [1.2081467], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 21 step 4: [0.9859595], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 21 step 5: [1.4763983], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 21 step 6: [1.7030686], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 21 step 7: [1.4928896], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 22 step 0: [1.4075356], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 22 step 1: [1.0908687], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 22 step 2: [1.454962], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 22 step 3: [1.4191117], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 22 step 4: [1.0085902], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 22 step 5: [1.7718306], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 22 step 6: [1.3462611], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 22 step 7: [0.9743985], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 23 step 0: [0.94811153], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 23 step 1: [1.2513305], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 23 step 2: [1.1646364], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 23 step 3: [1.3209751], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 23 step 4: [1.3218524], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 23 step 5: [1.4744635], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 23 step 6: [1.2777811], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 23 step 7: [2.6670046], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 24 step 0: [2.001917], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 24 step 1: [1.2912538], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 24 step 2: [1.1312728], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 24 step 3: [1.7753556], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 24 step 4: [1.9498931], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 24 step 5: [1.72786], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 24 step 6: [1.5395137], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 24 step 7: [2.026414], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 25 step 0: [1.2372247], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 25 step 1: [1.3693995], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 25 step 2: [1.1183994], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 25 step 3: [2.1276453], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 25 step 4: [1.7794199], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 25 step 5: [1.492043], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 25 step 6: [2.258515], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 25 step 7: [1.5273571], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 26 step 0: [2.0988126], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 26 step 1: [1.3915339], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 26 step 2: [1.1910077], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 26 step 3: [1.4379215], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 26 step 4: [1.7413586], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 26 step 5: [1.2674351], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 26 step 6: [1.0449867], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 26 step 7: [1.257424], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 27 step 0: [1.5561041], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 27 step 1: [1.2971337], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 27 step 2: [0.8652381], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 27 step 3: [1.6647866], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 27 step 4: [1.4879961], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 27 step 5: [2.2906623], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 27 step 6: [1.2900792], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 27 step 7: [1.7882528], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 0: [0.834065], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 28 step 1: [1.269814], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 2: [1.4017098], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 3: [1.432318], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 4: [2.1899586], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 5: [1.4493297], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 6: [1.9563377], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 7: [0.8688777], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 29 step 0: [0.8486787], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 29 step 1: [1.0579193], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 29 step 2: [0.9248045], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 29 step 3: [0.92404854], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 29 step 4: [0.9723685], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 29 step 5: [2.2007816], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 29 step 6: [1.1992489], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 29 step 7: [1.4114379], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 30 step 0: [0.66495746], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 30 step 1: [1.0609634], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 30 step 2: [0.95827746], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 30 step 3: [1.0640144], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 30 step 4: [1.1579835], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 30 step 5: [1.6480209], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 30 step 6: [2.0443273], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 30 step 7: [0.86709416], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 31 step 0: [1.181957], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 31 step 1: [0.6471566], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 31 step 2: [1.3082504], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 31 step 3: [0.821499], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 31 step 4: [0.74574316], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 31 step 5: [1.0986043], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 31 step 6: [1.2851515], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 31 step 7: [0.70362717], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 32 step 0: [1.6682429], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 32 step 1: [0.8610288], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 32 step 2: [0.77741873], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 32 step 3: [0.87466407], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 32 step 4: [1.6386949], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 32 step 5: [1.0607557], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 32 step 6: [0.7615488], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 32 step 7: [0.63884515], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 33 step 0: [1.554162], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 33 step 1: [1.1810691], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 33 step 2: [0.66037905], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 33 step 3: [0.93164766], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 33 step 4: [1.147244], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 33 step 5: [1.075774], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 33 step 6: [1.6529264], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 33 step 7: [1.4964265], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 34 step 0: [1.2487128], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 34 step 1: [0.96642685], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 34 step 2: [0.89535165], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 34 step 3: [0.76815975], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 34 step 4: [0.7280663], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 34 step 5: [1.6127486], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 34 step 6: [1.0250417], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 34 step 7: [1.1065432], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 35 step 0: [1.0426242], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 35 step 1: [0.922229], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 35 step 2: [1.4622066], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 35 step 3: [1.1115403], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 35 step 4: [1.2381332], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 35 step 5: [0.5471345], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 35 step 6: [1.1213206], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 35 step 7: [1.084509], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 36 step 0: [0.90347564], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 36 step 1: [1.2108159], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 36 step 2: [1.0059154], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 36 step 3: [0.92193377], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 36 step 4: [2.0273886], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 36 step 5: [1.8540998], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 36 step 6: [1.9245591], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 36 step 7: [1.7115937], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 37 step 0: [1.0416405], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 37 step 1: [0.947468], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 37 step 2: [0.7283451], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 37 step 3: [1.7693146], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 37 step 4: [1.3702577], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 37 step 5: [1.8823681], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 37 step 6: [0.58373976], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 37 step 7: [0.87043744], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 38 step 0: [1.4190683], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 38 step 1: [0.5909234], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 38 step 2: [0.68064165], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 38 step 3: [1.0405335], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 38 step 4: [1.074282], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 38 step 5: [1.3805189], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 38 step 6: [1.2305498], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 38 step 7: [0.9299582], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 39 step 0: [0.74851924], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 39 step 1: [0.4663355], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 39 step 2: [0.7899047], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 39 step 3: [1.0352806], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 39 step 4: [0.718447], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 39 step 5: [0.6591089], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 39 step 6: [0.9852241], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 39 step 7: [0.5992376], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 40 step 0: [0.8294092], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 40 step 1: [0.8443589], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 40 step 2: [1.0046616], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 40 step 3: [0.47184587], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 40 step 4: [0.7786348], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 40 step 5: [0.67983925], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 40 step 6: [1.0951124], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 40 step 7: [0.7676915], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 41 step 0: [0.7746028], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 41 step 1: [0.5312778], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 41 step 2: [0.7452516], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 41 step 3: [1.3089273], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 41 step 4: [1.4365366], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 41 step 5: [0.58153814], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 41 step 6: [1.6099939], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 41 step 7: [0.79869914], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 42 step 0: [0.47430855], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 42 step 1: [0.9500343], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 42 step 2: [0.78749657], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 42 step 3: [0.9927142], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 42 step 4: [0.7526654], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 42 step 5: [0.5942255], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 42 step 6: [1.7062861], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 42 step 7: [1.0377103], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 43 step 0: [0.7790424], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 43 step 1: [1.12612], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 43 step 2: [0.5682231], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 43 step 3: [0.79410833], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 43 step 4: [1.0226631], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 43 step 5: [0.5450369], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 43 step 6: [1.0806234], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 43 step 7: [1.1876048], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 44 step 0: [0.8507346], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 44 step 1: [1.7061481], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 44 step 2: [0.69134974], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 44 step 3: [0.6366395], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 44 step 4: [1.6385108], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 44 step 5: [0.8179408], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 44 step 6: [1.1013589], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 44 step 7: [0.7362377], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 45 step 0: [1.1794446], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 45 step 1: [1.1445456], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 45 step 2: [0.60544634], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 45 step 3: [1.365793], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 45 step 4: [0.83137083], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 45 step 5: [1.2792709], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 45 step 6: [1.4185008], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 45 step 7: [0.58891225], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 46 step 0: [0.6643461], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 46 step 1: [0.9874472], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 46 step 2: [0.35808498], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 46 step 3: [0.44791618], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 46 step 4: [1.0225163], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 46 step 5: [0.50967324], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 46 step 6: [0.6359672], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 46 step 7: [1.260846], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 47 step 0: [0.7233087], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 47 step 1: [1.5215951], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 47 step 2: [0.9552907], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 47 step 3: [0.6822446], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 47 step 4: [0.4305572], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 47 step 5: [0.71233517], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 47 step 6: [0.9817282], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 47 step 7: [2.074246], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 48 step 0: [0.95157], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 48 step 1: [1.1726437], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 48 step 2: [1.3101113], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 48 step 3: [0.5663533], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 48 step 4: [0.71649504], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 48 step 5: [0.8225], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 48 step 6: [0.9775295], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 48 step 7: [1.2217357], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 49 step 0: [0.6619309], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 49 step 1: [0.7392478], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 49 step 2: [0.9415503], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 49 step 3: [0.6194843], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 49 step 4: [1.1828535], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 49 step 5: [0.60173714], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 49 step 6: [0.7926864], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 49 step 7: [0.52622277], acc: [0.8]
+[INFO: train.py:  118]: Final loss: [0.52622277]
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=50, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:50
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [2.1408293], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [3.2588499], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [3.4368], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [3.318813], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [2.392507], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [4.801533], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [2.9036858], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [2.5407853], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [1.4764297], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [1.667493], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [4.4697924], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [2.6859512], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [1.8190056], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [1.3204432], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [2.2489], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [2.638996], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [2.2530968], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [2.344131], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [1.2940104], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [2.0493355], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [1.9931086], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [1.614042], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [2.6515455], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [2.8199165], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [2.0171933], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [1.1760967], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [1.784646], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [1.7258586], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [2.0941179], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [1.6641912], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [0.9962841], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [1.7234302], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [1.5590683], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [1.1472774], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [1.4889072], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [1.5641274], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [1.5397617], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [1.7930139], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [1.1019824], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [1.4688681], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [1.2386656], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [1.093507], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [1.2549711], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [1.5379914], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [0.61849403], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [1.9043928], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [1.217347], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [1.2522048], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [1.6128333], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [0.7309046], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [0.8102527], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [1.1243918], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [1.4052378], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 6 step 5: [1.5900891], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 6 step 6: [2.2717853], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 6 step 7: [1.2888253], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 7 step 0: [0.8959842], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 7 step 1: [0.9897796], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 7 step 2: [1.8230512], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 7 step 3: [1.5338719], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 7 step 4: [2.105773], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 7 step 5: [1.4361182], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 7 step 6: [1.5226598], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 7 step 7: [1.1640204], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 8 step 0: [0.81202656], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 1: [1.0781858], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 8 step 2: [0.95476997], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 8 step 3: [1.4504796], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 8 step 4: [1.9086257], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 8 step 5: [0.76869524], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 8 step 6: [1.6668584], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 8 step 7: [1.0375544], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 9 step 0: [0.865574], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 9 step 1: [1.821781], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 9 step 2: [0.46930227], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 9 step 3: [0.6850805], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 9 step 4: [0.91431266], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 9 step 5: [0.80345243], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 9 step 6: [1.3437868], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 9 step 7: [0.959824], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 10 step 0: [0.7469555], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 10 step 1: [1.0596764], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 10 step 2: [0.7606808], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 10 step 3: [0.93199664], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 10 step 4: [1.4885987], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 10 step 5: [0.6101805], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 10 step 6: [1.4203788], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 10 step 7: [1.9016706], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 11 step 0: [0.43420067], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 11 step 1: [1.5075521], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 11 step 2: [1.149416], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 11 step 3: [0.9817124], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 11 step 4: [0.74382734], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 11 step 5: [1.1387411], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 11 step 6: [0.7625147], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 11 step 7: [1.1197115], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 12 step 0: [1.2154373], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 12 step 1: [1.0916042], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 12 step 2: [0.638312], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 12 step 3: [1.2359236], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 12 step 4: [1.153497], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 12 step 5: [0.8286727], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 12 step 6: [0.9344306], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 12 step 7: [0.75986207], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 13 step 0: [0.6635182], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 13 step 1: [1.0677775], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 13 step 2: [0.9177052], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 13 step 3: [0.6350769], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 13 step 4: [0.55586576], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 13 step 5: [0.71397626], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 13 step 6: [0.62038547], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 13 step 7: [0.64267385], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 14 step 0: [0.6282155], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 14 step 1: [0.4930503], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 14 step 2: [0.65367585], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 14 step 3: [0.7680085], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 14 step 4: [0.50650066], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 14 step 5: [0.48544922], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 14 step 6: [1.1020257], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 14 step 7: [0.99727875], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 15 step 0: [1.0011401], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 15 step 1: [0.6478943], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 15 step 2: [0.5327972], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 15 step 3: [1.3926666], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 15 step 4: [0.6338749], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 15 step 5: [0.38495278], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 15 step 6: [1.2272954], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 15 step 7: [1.2809304], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 16 step 0: [0.61512107], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 16 step 1: [0.6659127], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 16 step 2: [1.1105161], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 16 step 3: [0.6956294], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 16 step 4: [1.0281126], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 16 step 5: [1.3984486], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 16 step 6: [0.6103852], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 16 step 7: [1.2985963], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 17 step 0: [1.3413701], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 17 step 1: [0.7657253], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 17 step 2: [1.1188538], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 17 step 3: [1.2649169], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 17 step 4: [0.7271482], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 17 step 5: [1.664816], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 17 step 6: [1.0940946], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 17 step 7: [0.7138189], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 18 step 0: [1.3843528], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 18 step 1: [1.0565525], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 18 step 2: [1.4635149], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 18 step 3: [1.0463829], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 18 step 4: [0.20597771], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 18 step 5: [0.7303526], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 18 step 6: [0.8700594], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 18 step 7: [0.6854225], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 19 step 0: [0.285586], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 19 step 1: [0.76215535], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 19 step 2: [1.0250356], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 19 step 3: [0.96321976], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 19 step 4: [0.6785463], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 19 step 5: [0.7454377], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 19 step 6: [1.1808735], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 19 step 7: [0.7416367], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 20 step 0: [0.80580616], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 20 step 1: [1.1387883], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 20 step 2: [0.5493405], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 20 step 3: [1.1963257], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 20 step 4: [0.5795912], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 20 step 5: [0.6834931], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 20 step 6: [0.9252009], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 20 step 7: [0.86589104], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 21 step 0: [0.72695976], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 21 step 1: [0.59288216], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 21 step 2: [0.6834549], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 21 step 3: [0.9114591], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 21 step 4: [0.41932908], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 21 step 5: [0.52087384], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 21 step 6: [1.006381], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 21 step 7: [1.5679735], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 22 step 0: [0.9863381], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 22 step 1: [1.0848856], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 22 step 2: [0.2863048], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 22 step 3: [0.40067238], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 22 step 4: [0.6799592], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 22 step 5: [0.2789438], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 22 step 6: [1.4949213], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 22 step 7: [2.0379508], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 23 step 0: [0.990371], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 23 step 1: [0.513364], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 23 step 2: [0.70153475], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 23 step 3: [0.87817425], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 23 step 4: [0.7035483], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 23 step 5: [1.658975], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 23 step 6: [0.30383268], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 23 step 7: [1.01633], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 24 step 0: [0.2832751], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 24 step 1: [0.75265837], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 24 step 2: [0.8393121], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 24 step 3: [0.27680457], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 24 step 4: [1.0043324], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 24 step 5: [1.1434326], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 24 step 6: [0.7514309], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 24 step 7: [0.60820055], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 25 step 0: [0.50891834], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 25 step 1: [0.8327675], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 25 step 2: [0.77858716], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 25 step 3: [0.69278085], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 25 step 4: [0.57270014], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 25 step 5: [0.6246556], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 25 step 6: [0.4225473], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 25 step 7: [1.675664], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 26 step 0: [0.51935863], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 26 step 1: [0.39091718], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 26 step 2: [0.35138008], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 26 step 3: [0.5782693], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 26 step 4: [0.7021398], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 26 step 5: [0.46245933], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 26 step 6: [2.3640404], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 26 step 7: [0.6003026], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 27 step 0: [0.45473585], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 27 step 1: [0.23567274], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 27 step 2: [0.36919355], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 27 step 3: [0.8873366], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 27 step 4: [0.6097834], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 27 step 5: [0.965448], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 27 step 6: [0.52051014], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 27 step 7: [0.69377875], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 28 step 0: [0.76603067], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 28 step 1: [0.63617224], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 28 step 2: [0.6083649], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 28 step 3: [0.8932309], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 28 step 4: [0.7265384], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 28 step 5: [0.5208364], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 28 step 6: [1.1375058], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 28 step 7: [1.7203702], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 29 step 0: [0.86961335], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 29 step 1: [0.7238915], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 29 step 2: [0.7396281], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 29 step 3: [0.8813634], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 29 step 4: [0.7831723], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 29 step 5: [1.462316], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 29 step 6: [1.9327643], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 29 step 7: [1.3578941], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 30 step 0: [0.44616118], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 30 step 1: [0.4524203], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 30 step 2: [0.66184264], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 30 step 3: [0.49335298], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 30 step 4: [0.3220433], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 30 step 5: [1.1995872], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 30 step 6: [1.0305004], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 30 step 7: [0.26119125], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 31 step 0: [0.8546956], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 31 step 1: [0.18561819], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 31 step 2: [0.92052126], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 31 step 3: [0.7552521], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 31 step 4: [0.54960656], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 31 step 5: [0.41459078], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 31 step 6: [1.53731], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 31 step 7: [0.6101898], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 32 step 0: [0.17826444], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 32 step 1: [0.45305353], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 32 step 2: [1.0729246], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 32 step 3: [0.24148473], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 32 step 4: [0.6337709], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 32 step 5: [0.89830554], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 32 step 6: [1.1194217], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 32 step 7: [1.7827609], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 33 step 0: [0.29155093], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 33 step 1: [0.57706946], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 33 step 2: [1.1764231], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 33 step 3: [0.3264379], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 33 step 4: [0.85239714], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 33 step 5: [0.32406026], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 33 step 6: [0.473368], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 33 step 7: [0.80073094], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 34 step 0: [0.31544665], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 34 step 1: [0.69262475], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 34 step 2: [0.77905405], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 34 step 3: [0.95431745], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 34 step 4: [0.30838358], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 34 step 5: [0.48160207], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 34 step 6: [0.9392601], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 34 step 7: [0.15732464], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 35 step 0: [0.172444], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 35 step 1: [0.59229946], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 35 step 2: [0.07202569], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 35 step 3: [0.5758759], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 35 step 4: [0.20167053], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 35 step 5: [1.2548018], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 35 step 6: [0.5429307], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 35 step 7: [0.44789845], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 36 step 0: [0.6979746], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 36 step 1: [0.39082405], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 36 step 2: [0.9668596], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 36 step 3: [0.47619104], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 36 step 4: [0.40224797], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 36 step 5: [0.32696423], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 36 step 6: [0.76686734], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 36 step 7: [0.8397262], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 37 step 0: [0.6135379], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 37 step 1: [0.1192977], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 37 step 2: [1.3012904], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 37 step 3: [0.31417537], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 37 step 4: [0.89336985], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 37 step 5: [0.18455371], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 37 step 6: [0.4887662], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 37 step 7: [0.21520346], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 38 step 0: [1.1970949], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 38 step 1: [0.19747943], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 38 step 2: [0.9948785], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 38 step 3: [1.0427067], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 38 step 4: [0.4000256], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 38 step 5: [0.42154217], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 38 step 6: [0.09735672], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 38 step 7: [0.32706565], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 39 step 0: [0.31118894], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 39 step 1: [0.8153269], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 39 step 2: [0.47668728], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 39 step 3: [1.3593293], acc: [0.5]
+[INFO: train.py:  115]: Loss at epoch 39 step 4: [0.4238244], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 39 step 5: [0.17549571], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 39 step 6: [0.22604975], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 39 step 7: [0.47316784], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 40 step 0: [0.42204642], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 40 step 1: [0.36558458], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 40 step 2: [0.54523677], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 40 step 3: [1.1185708], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 40 step 4: [0.7289402], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 40 step 5: [0.45389992], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 40 step 6: [0.2681541], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 40 step 7: [0.6698923], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 41 step 0: [0.22887181], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 41 step 1: [0.19923143], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 41 step 2: [0.42008722], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 41 step 3: [0.44750693], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 41 step 4: [0.65665555], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 41 step 5: [0.6680158], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 41 step 6: [0.38072544], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 41 step 7: [0.45335606], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 42 step 0: [0.43682727], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 42 step 1: [0.15099835], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 42 step 2: [0.6945603], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 42 step 3: [0.265777], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 42 step 4: [0.2903777], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 42 step 5: [0.11950699], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 42 step 6: [0.54442996], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 42 step 7: [0.18613344], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 43 step 0: [0.2740992], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 43 step 1: [0.3259141], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 43 step 2: [0.31678748], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 43 step 3: [0.3692926], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 43 step 4: [0.37512517], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 43 step 5: [0.7377125], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 43 step 6: [0.5396994], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 43 step 7: [1.4808228], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 44 step 0: [1.076113], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 44 step 1: [0.15047988], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 44 step 2: [1.1779884], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 44 step 3: [0.98025095], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 44 step 4: [0.258646], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 44 step 5: [0.31856316], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 44 step 6: [0.30879554], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 44 step 7: [0.641534], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 45 step 0: [0.35829672], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 45 step 1: [1.056148], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 45 step 2: [0.8732861], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 45 step 3: [0.3096766], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 45 step 4: [0.8699832], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 45 step 5: [0.34050113], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 45 step 6: [0.49286953], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 45 step 7: [0.29088375], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 46 step 0: [0.09410682], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 46 step 1: [0.0829382], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 46 step 2: [0.24488637], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 46 step 3: [0.45285308], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 46 step 4: [0.11093612], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 46 step 5: [0.74189234], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 46 step 6: [0.3812607], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 46 step 7: [0.34327286], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 47 step 0: [0.22588211], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 47 step 1: [0.19747964], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 47 step 2: [0.08844998], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 47 step 3: [0.20543435], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 47 step 4: [0.2156803], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 47 step 5: [0.19472109], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 47 step 6: [0.35428017], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 47 step 7: [0.568192], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 48 step 0: [0.11896299], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 48 step 1: [0.0346486], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 48 step 2: [0.14784361], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 48 step 3: [1.1322013], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 48 step 4: [0.6704004], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 48 step 5: [0.2382545], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 48 step 6: [0.25558886], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 48 step 7: [0.32065535], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 49 step 0: [0.1893051], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 49 step 1: [0.20748875], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 49 step 2: [1.187547], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 49 step 3: [0.04691242], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 49 step 4: [0.36144763], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 49 step 5: [0.7689646], acc: [0.6]
+[INFO: train.py:  115]: Loss at epoch 49 step 6: [0.93414354], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 49 step 7: [0.48519868], acc: [0.8]
+[INFO: train.py:  118]: Final loss: [0.48519868]
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=50, learning_rate=None, model_name='tsn', pretrain='True', save_dir='checkpoints_models', use_gpu=True)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:50
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:True
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [0.5097497], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [0.23565748], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [0.20354229], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [0.20472379], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [0.3617274], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [0.33791667], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [0.16497712], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [0.4693851], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [0.38712218], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [0.6572341], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [0.14867815], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [0.6160857], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [0.14821179], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [0.16843317], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [0.5508849], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [0.22174355], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [0.24146825], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [0.8607961], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [0.60905355], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [0.28926522], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [0.20362365], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [0.5863482], acc: [0.7]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [0.0796129], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [0.5849382], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [0.08330367], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [0.06296334], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [0.3895961], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [0.24909875], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [0.579292], acc: [0.8]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [0.13034776], acc: [1.]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [0.38035214], acc: [0.9]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [0.23803967], acc: [0.9]
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=100, learning_rate=None, model_name='tsn', pretrain=None, save_dir='checkpoints_models', use_gpu=False)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:100
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:False
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  126]: Namespace(batch_size=None, config='configs/tsn.txt', epoch=100, learning_rate=None, model_name='tsn', pretrain=None, save_dir='checkpoints_models', use_gpu=False)
+[INFO: config.py:   68]: ---------------- Train Arguments ----------------
+[INFO: config.py:   70]: MODEL:
+[INFO: config.py:   72]:     name:TSN
+[INFO: config.py:   72]:     format:pkl
+[INFO: config.py:   72]:     num_classes:10
+[INFO: config.py:   72]:     seg_num:3
+[INFO: config.py:   72]:     seglen:1
+[INFO: config.py:   72]:     image_mean:[0.485, 0.456, 0.406]
+[INFO: config.py:   72]:     image_std:[0.229, 0.224, 0.225]
+[INFO: config.py:   72]:     num_layers:50
+[INFO: config.py:   70]: TRAIN:
+[INFO: config.py:   72]:     epoch:100
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     use_gpu:False
+[INFO: config.py:   72]:     num_gpus:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/train.list
+[INFO: config.py:   72]:     learning_rate:0.01
+[INFO: config.py:   72]:     learning_rate_decay:0.1
+[INFO: config.py:   72]:     l2_weight_decay:0.0001
+[INFO: config.py:   72]:     momentum:0.9
+[INFO: config.py:   72]:     total_videos:80
+[INFO: config.py:   70]: VALID:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:2
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/val.list
+[INFO: config.py:   70]: TEST:
+[INFO: config.py:   72]:     seg_num:7
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:10
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   70]: INFER:
+[INFO: config.py:   72]:     short_size:240
+[INFO: config.py:   72]:     target_size:224
+[INFO: config.py:   72]:     num_reader_threads:1
+[INFO: config.py:   72]:     buf_size:1024
+[INFO: config.py:   72]:     batch_size:1
+[INFO: config.py:   72]:     filelist:./data/hmdb_data_demo/test.list
+[INFO: config.py:   73]: -------------------------------------------------
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [2.5970654], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 0: [2.5241592], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [2.4131439], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 1: [2.5852733], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [2.6367314], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 2: [2.3048844], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [2.4949784], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 3: [2.5187628], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [2.6147294], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 4: [2.3864026], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [2.3922782], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 0 step 5: [3.248207], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [2.7531655], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 6: [2.58454], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [2.2689853], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 0 step 7: [2.7240138], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [2.2135348], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 0: [2.4710605], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [2.3485456], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 1: [2.4724545], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [2.3272533], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 2: [2.7563782], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [2.6373296], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 3: [2.839366], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [2.4669003], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 1 step 4: [2.6997147], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [2.2815685], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 5: [2.6515749], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [2.6743526], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 1 step 6: [2.7109017], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [2.4110777], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 1 step 7: [2.1988003], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [2.2825115], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 0: [2.5894551], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [2.166113], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 1: [2.706831], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [2.6048248], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 2 step 2: [2.670361], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [2.3300276], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 3: [2.3863492], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [2.336123], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 4: [2.8788962], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [2.254964], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 5: [2.573938], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [2.698997], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 6: [3.124662], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [3.327633], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 2 step 7: [2.489046], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [2.361618], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 0: [2.3634963], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [2.6048713], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 1: [2.42571], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [2.7272954], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 2: [2.5838065], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [2.4982667], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 3: [2.1738052], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [2.693499], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 4: [2.27566], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [2.387905], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 3 step 5: [2.9346125], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [2.6562915], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 6: [1.9297285], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [2.9710336], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 3 step 7: [2.8593974], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [2.6331007], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 4 step 0: [1.9704282], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [2.6951222], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 1: [2.650965], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [2.345132], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 2: [2.6272578], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [2.642451], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 4 step 3: [2.4402556], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [2.3654284], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 4 step 4: [2.8979259], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [2.2058032], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 5: [2.5152938], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [2.8074644], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 4 step 6: [2.2642746], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [2.2834992], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 4 step 7: [2.244299], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [2.245455], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 0: [1.9505869], acc: [0.4]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [2.3439097], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 5 step 1: [2.7155056], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [2.4323144], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 2: [2.4403195], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [1.9116523], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 5 step 3: [2.251941], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [2.9786353], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 4: [2.2561216], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [2.576776], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 5: [3.2156105], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [2.5556698], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 5 step 6: [2.5196838], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [2.089024], acc: [0.3]
+[INFO: train.py:  115]: Loss at epoch 5 step 7: [2.271808], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [2.7293673], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 0: [2.0258472], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [2.2568343], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 6 step 1: [2.2439704], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [3.2128663], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 2: [3.2016883], acc: [0.2]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [2.422727], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 3: [2.4005477], acc: [0.1]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [2.707969], acc: [0.]
+[INFO: train.py:  115]: Loss at epoch 6 step 4: [2.345932], acc: [0.]
